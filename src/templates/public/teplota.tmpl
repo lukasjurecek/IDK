@@ -1,11 +1,11 @@
 {% from "macros/fields.tmpl" import render_input_field, render_submit %}
 {% extends "shared/layout.tmpl" %}
 
-{% block title %}Forgotten password{% endblock %}
+{% block title %}Ukladani teplot{% endblock %}
 
 {% block content %}
-  <h3>insert</h3>
-  <div class="form-group">Type in the email address you used when signing up and we'll send you a link to reset your password.</div>
+  <h3>Teplota</h3>
+  <div class="form-group">Zadej teplotu</div>
   <form method="POST" id='insert-form'>
     {{ form.hidden_tag() }}
     {{ render_input_field(form.teplota) }}

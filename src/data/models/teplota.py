@@ -12,3 +12,8 @@ class Teplota(CRUDModel):
     id = Column(Integer, primary_key=True )
     teplota = Column(Integer, nullable=False, index=True)
     cas_insertu = Column(DateTime)
+
+    def __init__(self, **kwargs):
+        self.cas_insertu = datetime.utcnow()
+        for k, v in kwargs.iteritems():
+            setattr(self, k, v)

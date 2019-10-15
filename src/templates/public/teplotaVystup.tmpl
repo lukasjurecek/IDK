@@ -6,10 +6,11 @@
 {% block content %}
   <h3>Teplota</h3>
  <table>
-    <tr> <td>{{ "ID:  "}}</td> <td>{{ " | "}}</td>  <td>{{ "    Teplota: "}}</td>   <td>{{ " | "}}</td> <td>{{ "    Cas: "}}</td> <td></td> </tr>
+    <tr> <td>{{ "ID:"}}</td> <td>{{ "|"}}</td><td>{{ "Teplota:"}}</td><td>{{ "|"}}</td><td>{{ "Cas:"}}</td> <td></td> </tr>
+ <tr> <td>{{"___"}}</td> <td>{{"_"}}</td><td>{{ "_______"}}</td><td>{{"__"}}</td><td>{{"____"}}</td> <td></td> </tr>
     {% for n in data %}
 
-        <tr> <td>{{ n.id }}</td><td>{{ " | "}}</td>    <td>{{ n.teplota }}</td>  <td>{{ "  | "}}</td>   <td>{{    n.cas_insertu}}</td> </tr>
+        <tr> <td>{{n.id }}</td><td>{{ " | "}}</td>    <td>{{n.teplota }}</td>  <td>{{ "  | "}}</td>   <td>{{n.cas_insertu}}</td> </tr>
     {% endfor %}
     </table>
 
