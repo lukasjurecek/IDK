@@ -4,11 +4,12 @@
 {% block title %}LIST{% endblock %}
 
 {% block content %}
-  <h3>insert</h3>
-  <div class="form-group">Type in the email address you used when signing up and we'll send you a link to reset your password.</div>
+  <h3>Teplota</h3>
  <table>
+    <tr> <td>{{ "ID:  "}}</td> <td>{{ " | "}}</td>  <td>{{ "    Teplota: "}}</td>   <td>{{ " | "}}</td> <td>{{ "    Cas: "}}</td> <td></td> </tr>
     {% for n in data %}
-        <tr><td>{{ n.id }}</td><td>{{ n.teplota }}</td> <td>{{ n.cas_insertu }}</td></tr>
+
+        <tr> <td>{{ n.id }}</td><td>{{ " | "}}</td>    <td>{{ n.teplota }}</td>  <td>{{ "  | "}}</td>   <td>{{    n.cas_insertu}}</td> </tr>
     {% endfor %}
     </table>
 
